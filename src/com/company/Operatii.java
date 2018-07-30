@@ -399,7 +399,17 @@ public class Operatii {
         return 0;
     }
 
-
+//6. Se se calculeze suma primelor n numere naturale, unde n este declarat ca si int n = 20; sau o alta valoare
+    public void sumaNrNaturale(int n) {
+        int s=1;
+        if (n==0) {
+            System.out.println("Suma primelor 0 numere este 0");
+        }
+        for (int i=0; i<n; i++) {
+            s = (n+1)*n/2;
+        }
+        System.out.println("Suma primelor " + n + " numere este: " + s);
+    }
 }
 
 

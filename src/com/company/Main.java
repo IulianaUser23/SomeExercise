@@ -295,11 +295,16 @@ end cat timp
 4 Se da un numar a. Se se afiseze un numar b format doar din numerele impare ale numarului a, si un numar c format
 din patratul numerelor pare ale numarului a.
 
+
 5. Se da un sir de numere ordonate crescator. Se va determina daca un numar n exista in sir, si daca exista se va afisa
  pozitia pe care s-a gasit, altfel se va afisa -1. Cu ce difera algoritmul cand sirul este ordonat crescator de
  cazul cand sirul este neordonat. sirul va fi definit asa, numerele sunt de exemplu. int[] a = {1,3,4,6,7,8,10,12,14,23};
+ */
 
-6. Se se calculeze suma primelor n numere naturale, unde n este declarat ca si int n = 20; //sau o alta valoare
+//6. Se se calculeze suma primelor n numere naturale, unde n este declarat ca si int n = 20; sau o alta valoare
+        op.sumaNrNaturale(20);
+
+ /*
 
 7. Se da un sir de numere naturale, ideal de peste doua cifre. Sa se determine cea mai mare valoare din sir
 care are suma de control sub 3. Suma de control a fost definita mai sus. de ex int[] sir ={12, 34,35, 11,34};
