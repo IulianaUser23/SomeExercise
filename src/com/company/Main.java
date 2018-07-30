@@ -273,7 +273,7 @@ end cat timp
 
 2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
 */
-   // op.nrOnReverse(4789);
+        // op.nrOnReverse(4789);
 
 
 //3. Se da un numar a. Sa se determine daca numarul este palindrom ori nu.
@@ -302,19 +302,38 @@ din patratul numerelor pare ale numarului a.
  */
 
 //6. Se se calculeze suma primelor n numere naturale, unde n este declarat ca si int n = 20; sau o alta valoare
-        op.sumaNrNaturale(20);
-
- /*
-
-7. Se da un sir de numere naturale, ideal de peste doua cifre. Sa se determine cea mai mare valoare din sir
-care are suma de control sub 3. Suma de control a fost definita mai sus. de ex int[] sir ={12, 34,35, 11,34};
+        //   op.sumaNrNaturale(20);
 
 
-8. Se da un numar . se se afiseze true daca numarul apartine intervalului [9,24] , altfel sa se afiseze false.
 
-9. se dau doua numere a si n. sa se afiseze numarul a la puterea n . de ex a =3 b = 2 se va calcula 3*3
-a = 3 b = 5 se va calcula 3*3*3*3*3
-*/
+//7. Se da un sir de numere naturale, ideal de peste doua cifre. Sa se determine cea mai mare valoare din sir
+//care are suma de control sub 3. Suma de control a fost definita mai sus. de ex int[] sir ={12, 34,35, 11,34};
+
+
+//8. Se da un numar. se se afiseze true daca numarul apartine intervalului [9,24] , altfel sa se afiseze false.
+
+//        int n;
+//        System.out.println("Introduceti numarul:");
+//        n = scan.nextInt();
+//        if (n>=9 & n<=24) {
+//            {System.out.println("True. Numarul apartine intervalului 9-24");}
+//        }
+//            else {System.out.println("False. Numarul nu apartine intervalului 9-24");}
+//        }
+
+ //9. se dau doua numere a si n. sa se afiseze numarul a la puterea n . de ex a =3 b = 2 se va calcula 3*3
+//a = 3 b = 5 se va calcula 3*3*3*3*3
+//        int a, n;
+//        System.out.println("Numarul este: ");
+//        a= scan.nextInt();
+//        System.out.println("Numarul se ridica la puterea: ");
+//        n = scan.nextInt();
+//        int Putere = a;
+//        if (n==0) {System.out.println(" Numarul ridicat la puterea 0 este 1");}
+//        for (int i=1; i<=n-1; i++)
+//        {Putere *=a; }
+//        System.out.println("rezultatul este:" + Putere);
+
 
 //10. Sa se calculeze factorialul unui numar a . factorialul este definit asa: factorial  = 1*2*3*4….*a
 //de ex pentru a = 4, factorialul este 1*2*3*4
@@ -329,11 +348,29 @@ a = 3 b = 5 se va calcula 3*3*3*3*3
 
 12. Se da un numar intreg x si un numar intreg n. Sa se calculeze urmatoarea suma:
 suma = 1+x+x la puterea 2 + x la puterea 3 + ….+ x la puterea n .
+*/
 
-13. Se da un sir. Sa se verifice daca sirul este ordonat crescator , iar daca nu este sa se ordoneze si sa se
-afiseze in ordine crescatoare de ex pt sirul {2,3,4} se va afisa “crescator” iar pt sirul {3,2,4}
- si va ordina si afisa {2,3,4}
+//13. Se da un sir. Sa se verifice daca sirul este ordonat crescator , iar daca nu este sa se ordoneze si sa se
+//afiseze in ordine crescatoare de ex pt sirul {2,3,4} se va afisa “crescator” iar pt sirul {3,2,4}
+// si va ordina si afisa {2,3,4}
 
+//        int[] aList = {3, 2, 4, 7, 8, 1, 5};
+//        for (int sir : aList) {
+//            System.out.print(sir);
+//        }
+//        for (int i = 0; i <= aList.length; i++)
+//            if (aList[i] < aList[i + 1]) {
+//                System.out.print(" " + " crescator ");
+//                break;
+//            } else {
+//                Arrays.sort(aList, 0, aList.length);
+//                System.out.print(" " + "Sirul cu valori sortate: ");
+//                for (int sir : aList) {
+//                    System.out.print(sir);
+//                }
+//            }
+
+/*
 14. Se da un sir. Pentru prima jumatate a sirului sa se afiseze numerele dublate, iar pentru a doua jumatate sa se
 afseze numerele triplate daca sunt impare si numerele asa cum sunt in sir daca sunt pare.
 
@@ -345,7 +382,8 @@ afseze numerele triplate daca sunt impare si numerele asa cum sunt in sir daca s
  - Sa se modifice penultimul numar din lista
 */
 
-    }
-}
+
+    }}
+
 
 
