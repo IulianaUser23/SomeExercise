@@ -169,6 +169,10 @@ public class Operatii {
     // 1.Define and write the values of an array indices, so that the values of the arrays should start
 //   from 1 and count to 100; Print the progress in the console;
     public void array() {
+        int[] myArray = new int[100];
+        for (int i = 1; i <= myArray.length; i++){
+            System.out.println(i);
+        }
 
     }
 
@@ -192,7 +196,7 @@ public class Operatii {
     }
 
     // 3.Write a Java program to test if an array contains a specific value.
-    public boolean arrayHasvalue(int nr) {
+    public boolean arrayHasValue(int nr) {
         int[] myArray = {1, 21, 7, 9, 11, 5, 12, 24, 15, 17};
 
         for (int i : myArray) {

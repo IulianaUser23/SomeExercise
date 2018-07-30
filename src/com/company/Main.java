@@ -217,14 +217,14 @@ lower than 3 print “The number is lower than 3”*/
 
 // 1.Define and write the values of an array indices, so that the values of the arrays should start
 //   from 1 and count to 100; Print the progress in the console;
-        op.array();
+       // op.array();
 
 
 //  2.Write a Java program to calculate the average value of array elements.
             //op.calculateAverageInArray();
 
 // 3.Write a Java program to test if an array contains a specific value.
-            //System.out.println(op.arrayHasvalue(12));
+            //System.out.println(op.arrayHasValue(12));
 
 // 4.Write a Java program to find the index of an array element.
             // op.arrayHasIndex(15);
