@@ -305,7 +305,6 @@ din patratul numerelor pare ale numarului a.
         //   op.sumaNrNaturale(20);
 
 
-
 //7. Se da un sir de numere naturale, ideal de peste doua cifre. Sa se determine cea mai mare valoare din sir
 //care are suma de control sub 3. Suma de control a fost definita mai sus. de ex int[] sir ={12, 34,35, 11,34};
 
@@ -321,7 +320,7 @@ din patratul numerelor pare ale numarului a.
 //            else {System.out.println("False. Numarul nu apartine intervalului 9-24");}
 //        }
 
- //9. se dau doua numere a si n. sa se afiseze numarul a la puterea n . de ex a =3 b = 2 se va calcula 3*3
+        //9. se dau doua numere a si n. sa se afiseze numarul a la puterea n . de ex a =3 b = 2 se va calcula 3*3
 //a = 3 b = 5 se va calcula 3*3*3*3*3
 //        int a, n;
 //        System.out.println("Numarul este: ");
@@ -342,13 +341,21 @@ din patratul numerelor pare ale numarului a.
 //        System.out.println("Factorialul este:" + op.factorial(numar));
 
 
-/*
-11. Se da un sir de numere. Sa se afiseze perechile de numere pentru care  primul numar este mai mare decat al doilea.
- de ex pt 11 13 9 8 16 se va afisa   13 9 , 9 8
+//11. Se da un sir de numere. Sa se afiseze perechile de numere pentru care  primul numar este mai mare decat al doilea.
+//de ex pt 11 13 9 8 16 se va afisa   13 9 , 9 8
 
-12. Se da un numar intreg x si un numar intreg n. Sa se calculeze urmatoarea suma:
-suma = 1+x+x la puterea 2 + x la puterea 3 + ….+ x la puterea n .
-*/
+//12. Se da un numar intreg x si un numar intreg n. Sa se calculeze urmatoarea suma:
+//suma = 1+x+x la puterea 2 + x la puterea 3 + ….+ x la puterea n .
+//        double x, n, sum;
+//        System.out.println("Introduceti un numar intreg:");
+//        x = scan.nextInt();
+//        System.out.println("Introduceri puterea:");
+//        n = scan.nextInt();
+//        sum = 1;
+//        for (int i = 0; i <= n; i++) {
+//            sum = sum + Math.pow(x, n);
+//            System.out.println("suma este:" + sum);
+
 
 //13. Se da un sir. Sa se verifice daca sirul este ordonat crescator , iar daca nu este sa se ordoneze si sa se
 //afiseze in ordine crescatoare de ex pt sirul {2,3,4} se va afisa “crescator” iar pt sirul {3,2,4}
@@ -376,6 +383,8 @@ afseze numerele triplate daca sunt impare si numerele asa cum sunt in sir daca s
 
 15. Se da un sir. Sa se extraga toate numerele intre doua valori si sa se puna intr-un alt sir care apoi sa se afiseze.
 
+
+
 16. Sa se citeasca numere de la tastauta pana la introducerea valorii 0 (numerele sa fie salvate intr-o lista - ArrayList)
  - Sa se steaga al doilea numar din lista
  - Sa se adauge un numar in lista (la finalil listei)
@@ -383,7 +392,7 @@ afseze numerele triplate daca sunt impare si numerele asa cum sunt in sir daca s
 */
 
 
-    }}
-
+    }
+}
 
 
