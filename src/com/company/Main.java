@@ -270,9 +270,24 @@ cat timp a diferit de zero
     //aici fac o prelucrarea , cerintele
    a = a/10
 end cat timp
-
-2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
 */
+
+        int nr;
+        int suma=0;
+        int produs = 1;
+
+        System.out.println("introduceti numarul");
+        nr = scan.nextInt();
+        while (nr % 10 != 0) {
+            suma = suma + (nr % 10);
+            produs = produs * (nr % 10);
+            nr = nr / 10;
+        }
+        System.out.println("suma numerelor este: " + suma);
+        System.out.println("produsul numerelor este: " + produs);
+
+//2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
+
         // op.nrOnReverse(4789);
 
 
@@ -293,6 +308,9 @@ end cat timp
 
 //4 Se da un numar a. Se se afiseze un numar b format doar din numerele impare ale numarului a, si un numar c format
 //din patratul numerelor pare ale numarului a.
+       // int a = 625378782178;
+
+
 
 
 //5. Se da un sir de numere ordonate crescator. Se va determina daca un numar n exista in sir, si daca exista se va afisa
@@ -343,6 +361,7 @@ end cat timp
 
 //11. Se da un sir de numere. Sa se afiseze perechile de numere pentru care  primul numar este mai mare decat al doilea.
 //de ex pt 11 13 9 8 16 se va afisa   13 9 , 9 8
+
 
 //12. Se da un numar intreg x si un numar intreg n. Sa se calculeze urmatoarea suma:
 //suma = 1+x+x la puterea 2 + x la puterea 3 + ….+ x la puterea n .
