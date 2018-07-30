@@ -271,25 +271,25 @@ cat timp a diferit de zero
    a = a/10
 end cat timp
 */
-        int nr;
-        int suma=0;
-        int produs = 1;
-        System.out.println("introduceti numarul");
-        nr = scan.nextInt();
-
-        int count = 0;
-
-        while (nr % 10 != 0) {
-            suma = suma + (nr % 10);
-            produs = produs * (nr % 10);
-            nr =  nr / 10;
-            ++count;
-        }
-       //a
-        System.out.println("suma numerelor este: " + suma);
-        System.out.println("produsul numerelor este: " + produs);
-        //b
-        System.out.println("Numarul este format din: " + count + " cifre");
+//        int nr;
+//        int suma=0;
+//        int produs = 1;
+//        System.out.println("introduceti numarul");
+//        nr = scan.nextInt();
+//
+//        int count = 0;
+//
+//        while (nr % 10 != 0) {
+//            suma = suma + (nr % 10);
+//            produs = produs * (nr % 10);
+//            nr =  nr / 10;
+//            ++count;
+//        }
+//       //a
+//        System.out.println("suma numerelor este: " + suma);
+//        System.out.println("produsul numerelor este: " + produs);
+//        //b
+//        System.out.println("Numarul este format din: " + count + " cifre");
 
 
 //2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
@@ -417,7 +417,9 @@ end cat timp
  - Sa se adauge un numar in lista (la finalil listei)
  - Sa se modifice penultimul numar din lista
 */
-
+        ArrayList myList = new ArrayList();
+        System.out.println ("NUMBERS:");
+        int input = scan.nextInt();
 
     }
 }
