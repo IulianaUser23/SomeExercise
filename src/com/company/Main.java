@@ -14,7 +14,9 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
         Operatii op = new Operatii();
-//        System.out.println("Enter first number: ");
+
+
+        //        System.out.println("Enter first number: ");
 //        int first = scan.nextInt();
 //        System.out.println("Enter second number: ");
 //        int second = scan.nextInt();
@@ -154,28 +156,28 @@ lower than 3 print “The number is lower than 3”*/
 //  4.Write a program called SumAndAverage to produce the sum of 1, 2, 3, ..., to 100.
 // Also compute and display the average
 
-            //op.average();
+        //op.average();
 
 //1.Modify previous ex 4. to use “while-do” loop instead of “for” loop
-            // op.averageWhile();
+        // op.averageWhile();
 
 
 //2.Modify the program to use a "do-while" loop.
 
-            // op.averageDoWhile();
+        // op.averageDoWhile();
 
 //3.Modify the program to sum from 111 to 8899, and compute the average. Introduce an int variable called count 
-            //  to count the numbers in the specified range.
+        //  to count the numbers in the specified range.
 
-            // op.averageWithCount();
+        // op.averageWithCount();
 
 
 // 4.Write a program to sum only the odd numbers from 1 to 100, and compute the average.
-            //  op.averageWithOdd();
+        //  op.averageWithOdd();
 
 // 5.Write a program to sum those numbers from 1 to 100 that is divisible by 7, and compute the average.
 
-            //op.averageDivisible();
+        //op.averageDivisible();
 
 // 6.Write the program do display the first 20 Fibonacci numbers
 
@@ -217,44 +219,42 @@ lower than 3 print “The number is lower than 3”*/
 
 // 1.Define and write the values of an array indices, so that the values of the arrays should start
 //   from 1 and count to 100; Print the progress in the console;
-       // op.array();
+        // op.array();
 
 
 //  2.Write a Java program to calculate the average value of array elements.
-            //op.calculateAverageInArray();
+        //op.calculateAverageInArray();
 
 // 3.Write a Java program to test if an array contains a specific value.
-            //System.out.println(op.arrayHasValue(12));
+        //System.out.println(op.arrayHasValue(12));
 
 // 4.Write a Java program to find the index of an array element.
-            // op.arrayHasIndex(15);
+        // op.arrayHasIndex(15);
 
 // 5.Write a Java program to remove a specific element from an array.
 
-            //  op.removeElemFromArray(22);
+        //  op.removeElemFromArray(22);
 
 
 // 6.Write a Java program to find the second smallest element in an array.
-            // op.findSecondMinValue();
+        // op.findSecondMinValue();
 
 
 // 1.Given a list of numbers, check which one is the highest and print it.
-            // op.listMax();
+        // op.listMax();
 
 // 2.Given a list of numbers, determine all of the even ones
-            //op.listEvenNumbers();
+        //op.listEvenNumbers();
 
 // 3.Write a Java program to iterate through all elements in a loop starting at the specified position
-            //  op.iterateListFromPosition(5);
+        //  op.iterateListFromPosition(5);
 
 // 4.Write a Java program to sort an array or a list
-            //  op.sortList();
+        //  op.sortList();
 
 
-     /*
-     1. Se da un numar natural a, de exemplu
-     int a = 64321
-
+/*
+1. Se da un numar natural a, de exemplu int a = 64321
 a) Sa se calculeze suma cifrelor numarului cat si produsul lor de ex pentru numarul de mai sus vom avea
 suma = 6+4+3+2+1 produsul = 6*4*3*2*1
 b) sa se precizeze cate cifre are numarul citit de ex pentru numarul de mai sus cifre=5
@@ -272,10 +272,27 @@ cat timp a diferit de zero
 end cat timp
 
 2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
+*/
 
-3. Se da un numar a. Sa se determine daca numarul este palindrom ori nu.
-Un numar este palindrom dca este egal cu numarul inversat de ex int a = 12344321 este palindrom
+    op.nrOnReverse(4789);
 
+
+//3. Se da un numar a. Sa se determine daca numarul este palindrom ori nu.
+//Un numar este palindrom dca este egal cu numarul inversat de ex int a = 12344321 este palindrom
+
+//        List<Integer> myList = new ArrayList<>();
+//        myList.add(1);
+//        myList.add(2);
+//        myList.add(3);
+//        myList.add(4);
+//        myList.add(4);
+//        myList.add(3);
+//        myList.add(2);
+//        myList.add(1);
+//        op.testPalindrom(myList);
+
+
+/*
 4 Se da un numar a. Se se afiseze un numar b format doar din numerele impare ale numarului a, si un numar c format
 din patratul numerelor pare ale numarului a.
 
@@ -289,16 +306,20 @@ din patratul numerelor pare ale numarului a.
 care are suma de control sub 3. Suma de control a fost definita mai sus. de ex int[] sir ={12, 34,35, 11,34};
 
 
-8. se da un numar . se se afiseze true daca numrul apartine intervalului [9,24] , altfel sa se afiseze true.
+8. Se da un numar . se se afiseze true daca numarul apartine intervalului [9,24] , altfel sa se afiseze false.
 
 9. se dau doua numere a si n. sa se afiseze numarul a la puterea n . de ex a =3 b = 2 se va calcula 3*3
 a = 3 b = 5 se va calcula 3*3*3*3*3
+*/
+
+//10. Sa se calculeze factorialul unui numar a . factorialul este definit asa: factorial  = 1*2*3*4….*a
+//de ex pentru a = 4, factorialul este 1*2*3*4
+//        System.out.println("Introduceti numarul si apasati enter:");
+//        int numar = scan.nextInt();
+//        System.out.println("Factorialul este:" + op.factorial(numar));
 
 
-10. Sa se calculeze factorialul unui numar a . factorialul este definit asa: factorial  = 1*2*3*4….*a
-de ex pentru a = 4, factorialul este 1*2*3*4
-
-
+/*
 11. Se da un sir de numere. Sa se afiseze perechile de numere pentru care  primul numar este mai mare decat al doilea.
  de ex pt 11 13 9 8 16 se va afisa   13 9 , 9 8
 
@@ -319,7 +340,6 @@ afseze numerele triplate daca sunt impare si numerele asa cum sunt in sir daca s
  - Sa se adauge un numar in lista (la finalil listei)
  - Sa se modifice penultimul numar din lista
 */
-
 
     }
 }

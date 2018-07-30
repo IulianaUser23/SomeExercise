@@ -344,6 +344,54 @@ public class Operatii {
 
     //return (Comparator<T> & Serializable)
     //    (c1, c2) -> keyExtractor.apply(c1).compareTo(keyExtractor.apply(c2));
+
+
+
+//10. Sa se calculeze factorialul unui numar a . factorialul este definit asa: factorial  = 1*2*3*4….*a
+//de ex pentru a = 4, factorialul este 1*2*3*4
+    public static int factorial(int numar) {
+        int fact = 1;
+        for (int i = 1; i <= numar; i++) {
+            fact = i * fact;
+        }return fact;
+    }
+
+    public static void printMeniu() {
+        System.out.println("1. Citire date");
+        System.out.println("2. Afisare rezultate");
+        System.out.println("x. Iesire");
+    }
+
+//   2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
+
+    public void nrOnReverse(int number) {
+        
+    }
+
+//3. Se da un numar a. Sa se determine daca numarul este palindrom ori nu.
+//Un numar este palindrom dca este egal cu numarul inversat de ex int a = 12344321 este palindrom
+
+        public static int testPalindrom(List<Integer> sir) {
+        boolean switchTest = true;
+        int i = 0;
+        while (switchTest != false && (i != sir.size() / 2)) {
+            for (i = 0; i < sir.size() / 2; i++) {
+                if (sir.get(i) == sir.get(sir.size() - 1 - i)) {
+                } else {
+                    switchTest = false;
+                }
+            }
+        }
+        if (switchTest == true) {
+            System.out.println("Lista este palindrom!");
+        } else {
+            System.out.println("Lista NU este palindrom!");
+
+        }
+        return 0;
+    }
+
+
 }
 
 
