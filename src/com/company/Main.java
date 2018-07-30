@@ -271,20 +271,26 @@ cat timp a diferit de zero
    a = a/10
 end cat timp
 */
+        int nr;
+        int suma=0;
+        int produs = 1;
+        System.out.println("introduceti numarul");
+        nr = scan.nextInt();
 
-//        int nr;
-//        int suma=0;
-//        int produs = 1;
-//
-//        System.out.println("introduceti numarul");
-//        nr = scan.nextInt();
-//        while (nr % 10 != 0) {
-//            suma = suma + (nr % 10);
-//            produs = produs * (nr % 10);
-//            nr = nr / 10;
-//        }
-//        System.out.println("suma numerelor este: " + suma);
-//        System.out.println("produsul numerelor este: " + produs);
+        int count = 0;
+
+        while (nr % 10 != 0) {
+            suma = suma + (nr % 10);
+            produs = produs * (nr % 10);
+            nr =  nr / 10;
+            ++count;
+        }
+       //a
+        System.out.println("suma numerelor este: " + suma);
+        System.out.println("produsul numerelor este: " + produs);
+        //b
+        System.out.println("Numarul este format din: " + count + " cifre");
+
 
 //2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
 
@@ -310,14 +316,15 @@ end cat timp
 //din patratul numerelor pare ale numarului a.
        // int a = 625378782178;
 
+
 //5. Se da un sir de numere ordonate crescator. Se va determina daca un numar n exista in sir, si daca exista se va afisa
  //pozitia pe care s-a gasit, altfel se va afisa -1. Cu ce difera algoritmul cand sirul este ordonat crescator de
  //cazul cand sirul este neordonat. sirul va fi definit asa, numerele sunt de exemplu.
-        int[] list = {1,3,4,6,7,8,10,12,14,23};
-        System.out.println("index of 12 is "
-                + Arrays.binarySearch(list, 12));
-        System.out.println(op.binarySearch1(list, 5));
-        System.out.println(op.binarySearch1(list, 14));
+//        int[] list = {1,3,4,6,7,8,10,12,14,23};
+//        System.out.println("index of 12 is "
+//                + Arrays.binarySearch(list, 12));
+//        System.out.println(op.binarySearch1(list, 5));
+//        System.out.println(op.binarySearch1(list, 14));
 
 
 //6. Se se calculeze suma primelor n numere naturale, unde n este declarat ca si int n = 20; sau o alta valoare
@@ -339,7 +346,7 @@ end cat timp
 //            else {System.out.println("False. Numarul nu apartine intervalului 9-24");}
 //        }
 
-        //9. se dau doua numere a si n. sa se afiseze numarul a la puterea n . de ex a =3 b = 2 se va calcula 3*3
+//9. se dau doua numere a si n. sa se afiseze numarul a la puterea n . de ex a =3 b = 2 se va calcula 3*3
 //a = 3 b = 5 se va calcula 3*3*3*3*3
 //        int a, n;
 //        System.out.println("Numarul este: ");
@@ -381,31 +388,31 @@ end cat timp
 //afiseze in ordine crescatoare de ex pt sirul {2,3,4} se va afisa “crescator” iar pt sirul {3,2,4}
 // si va ordina si afisa {2,3,4}
 
-//        int[] aList = {3, 2, 4, 7, 8, 1, 5};
-//        for (int sir : aList) {
+//        int[] myList = {3, 2, 4, 7, 8, 1, 5};
+//        for (int sir : myList) {
 //            System.out.print(sir);
 //        }
-//        for (int i = 0; i <= aList.length; i++)
-//            if (aList[i] < aList[i + 1]) {
+//        for (int i = 0; i <= myList.length; i++)
+//            if (myList[i] < myList[i + 1]) {
 //                System.out.print(" " + " crescator ");
 //                break;
 //            } else {
-//                Arrays.sort(aList, 0, aList.length);
+//                Arrays.sort(myList, 0, myList.length);
 //                System.out.print(" " + "Sirul cu valori sortate: ");
-//                for (int sir : aList) {
+//                for (int sir : myList) {
 //                    System.out.print(sir);
 //                }
 //            }
 
-/*
-14. Se da un sir. Pentru prima jumatate a sirului sa se afiseze numerele dublate, iar pentru a doua jumatate sa se
-afseze numerele triplate daca sunt impare si numerele asa cum sunt in sir daca sunt pare.
 
-15. Se da un sir. Sa se extraga toate numerele intre doua valori si sa se puna intr-un alt sir care apoi sa se afiseze.
+//14. Se da un sir. Pentru prima jumatate a sirului sa se afiseze numerele dublate, iar pentru a doua jumatate sa se
+//afseze numerele triplate daca sunt impare si numerele asa cum sunt in sir daca sunt pare.
 
 
+//15. Se da un sir. Sa se extraga toate numerele intre doua valori si sa se puna intr-un alt sir care apoi sa se afiseze.
 
-16. Sa se citeasca numere de la tastauta pana la introducerea valorii 0 (numerele sa fie salvate intr-o lista - ArrayList)
+
+/*16. Sa se citeasca numere de la tastauta pana la introducerea valorii 0 (numerele sa fie salvate intr-o lista - ArrayList)
  - Sa se steaga al doilea numar din lista
  - Sa se adauge un numar in lista (la finalil listei)
  - Sa se modifice penultimul numar din lista

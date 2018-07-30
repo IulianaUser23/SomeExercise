@@ -430,7 +430,6 @@ public class Operatii {
         }
         System.out.println("Suma primelor " + n + " numere este: " + s);
     }
-
 }
 
 
