@@ -365,7 +365,15 @@ public class Operatii {
 //   2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
 
     public void nrOnReverse(int number) {
-        
+        int reverse = 0;
+        while(number != 0)
+        {
+            reverse = reverse * 10;
+            reverse = reverse + number%10;
+            number = number/10;
+        }
+
+        System.out.println("Reverse of the number is " + reverse);
     }
 
 //3. Se da un numar a. Sa se determine daca numarul este palindrom ori nu.

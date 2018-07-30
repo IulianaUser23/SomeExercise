@@ -273,12 +273,11 @@ end cat timp
 
 2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
 */
-
-    op.nrOnReverse(4789);
+   // op.nrOnReverse(4789);
 
 
 //3. Se da un numar a. Sa se determine daca numarul este palindrom ori nu.
-//Un numar este palindrom dca este egal cu numarul inversat de ex int a = 12344321 este palindrom
+//Un numar este palindrom daca este egal cu numarul inversat de ex int a = 12344321 este palindrom
 
 //        List<Integer> myList = new ArrayList<>();
 //        myList.add(1);
