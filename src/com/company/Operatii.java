@@ -170,7 +170,7 @@ public class Operatii {
 //   from 1 and count to 100; Print the progress in the console;
     public void array() {
         int[] myArray = new int[100];
-        for (int i = 1; i <= myArray.length; i++){
+        for (int i = 1; i <= myArray.length; i++) {
             System.out.println(i);
         }
 
@@ -287,47 +287,48 @@ public class Operatii {
         System.out.println("The maximum value is: " + max);
     }
 
-// 2.Given a list of numbers, determine all of the even ones
+    // 2.Given a list of numbers, determine all of the even ones
     public void listEvenNumbers() {
 
-            List<Integer> myList = new ArrayList<>();
+        List<Integer> myList = new ArrayList<>();
 
-            myList.add(1);
-            myList.add(3);
-            myList.add(6);
-            myList.add(10);
-            myList.add(13);
-            myList.add(18);
-            myList.add(21);
-            myList.add(26);
-            myList.add(29);
-            myList.add(4);
+        myList.add(1);
+        myList.add(3);
+        myList.add(6);
+        myList.add(10);
+        myList.add(13);
+        myList.add(18);
+        myList.add(21);
+        myList.add(26);
+        myList.add(29);
+        myList.add(4);
 
-            for (int i = 0; i < myList.size(); i++) {
-                if (myList.get(i) % 2 == 0) {
-                    System.out.println(myList.get(i));
-                }
-            }
-        }
-// 3.Write a Java program to iterate through all elements in a loop starting at the specified position
-    public void iterateListFromPosition(int nr) {
-
-            List<Integer> myList = new ArrayList<>();
-
-            myList.add(2);
-            myList.add(5);
-            myList.add(8);
-            myList.add(12);
-            myList.add(17);
-            myList.add(21);
-            myList.add(32);
-            myList.add(41);
-            myList.add(39);
-            myList.add(72);
-
-            for (int i = nr; i < myList.size(); i++) {
+        for (int i = 0; i < myList.size(); i++) {
+            if (myList.get(i) % 2 == 0) {
                 System.out.println(myList.get(i));
             }
+        }
+    }
+
+    // 3.Write a Java program to iterate through all elements in a loop starting at the specified position
+    public void iterateListFromPosition(int nr) {
+
+        List<Integer> myList = new ArrayList<>();
+
+        myList.add(2);
+        myList.add(5);
+        myList.add(8);
+        myList.add(12);
+        myList.add(17);
+        myList.add(21);
+        myList.add(32);
+        myList.add(41);
+        myList.add(39);
+        myList.add(72);
+
+        for (int i = nr; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
     }
 
 // 4.Write a Java program to sort an array or a list
@@ -341,19 +342,18 @@ public class Operatii {
     }
 
 
-
     //return (Comparator<T> & Serializable)
     //    (c1, c2) -> keyExtractor.apply(c1).compareTo(keyExtractor.apply(c2));
 
 
-
-//10. Sa se calculeze factorialul unui numar a . factorialul este definit asa: factorial  = 1*2*3*4….*a
+    //10. Sa se calculeze factorialul unui numar a . factorialul este definit asa: factorial  = 1*2*3*4….*a
 //de ex pentru a = 4, factorialul este 1*2*3*4
     public static int factorial(int numar) {
         int fact = 1;
         for (int i = 1; i <= numar; i++) {
             fact = i * fact;
-        }return fact;
+        }
+        return fact;
     }
 
     public static void printMeniu() {
@@ -366,11 +366,10 @@ public class Operatii {
 
     public void nrOnReverse(int number) {
         int reverse = 0;
-        while(number != 0)
-        {
+        while (number != 0) {
             reverse = reverse * 10;
-            reverse = reverse + number%10;
-            number = number/10;
+            reverse = reverse + number % 10;
+            number = number / 10;
         }
 
         System.out.println("Reverse of the number is " + reverse);
@@ -379,7 +378,7 @@ public class Operatii {
 //3. Se da un numar a. Sa se determine daca numarul este palindrom ori nu.
 //Un numar este palindrom dca este egal cu numarul inversat de ex int a = 12344321 este palindrom
 
-        public static int testPalindrom(List<Integer> sir) {
+    public static int testPalindrom(List<Integer> sir) {
         boolean switchTest = true;
         int i = 0;
         while (switchTest != false && (i != sir.size() / 2)) {
@@ -398,18 +397,40 @@ public class Operatii {
         }
         return 0;
     }
+//5. Se da un sir de numere ordonate crescator. Se va determina daca un numar n exista in sir, si daca exista se va afisa
+//pozitia pe care s-a gasit, altfel se va afisa -1. Cu ce difera algoritmul cand sirul este ordonat crescator de
+//cazul cand sirul este neordonat. sirul va fi definit asa, numerele sunt de exemplu.
+
+    public int binarySearch1(int[] list, int key) {
+
+        int start = 0;
+        int end = list.length - 1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (key == list[mid]) {
+                return mid;
+            }
+            if (key < list[mid]) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+        }
+        return -1;
+    }
 
 //6. Se se calculeze suma primelor n numere naturale, unde n este declarat ca si int n = 20; sau o alta valoare
     public void sumaNrNaturale(int n) {
-        int s=1;
-        if (n==0) {
+        int s = 1;
+        if (n == 0) {
             System.out.println("Suma primelor 0 numere este 0");
         }
-        for (int i=0; i<n; i++) {
-            s = (n+1)*n/2;
+        for (int i = 0; i < n; i++) {
+            s = (n + 1) * n / 2;
         }
         System.out.println("Suma primelor " + n + " numere este: " + s);
     }
+
 }
 
 
