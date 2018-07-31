@@ -397,6 +397,29 @@ public class Operatii {
         }
         return 0;
     }
+
+//4 Se da un numar a. Se se afiseze un numar b format doar din numerele impare ale numarului a, si un numar c format
+//din patratul numerelor pare ale numarului a.
+    // int a = 6253787;
+           public void twoFromOneNumber(int a) {
+
+        int b = 0;
+        int c = 0;
+
+        while (a>0){
+            if (a%2==0){
+                c += Math.pow(a%10,2);
+
+            } else
+                b += (a%10);
+            a=a/10;
+        }
+
+        System.out.println("b = "+b );
+        System.out.println("c = " +c);
+    }
+
+
 //5. Se da un sir de numere ordonate crescator. Se va determina daca un numar n exista in sir, si daca exista se va afisa
 //pozitia pe care s-a gasit, altfel se va afisa -1. Cu ce difera algoritmul cand sirul este ordonat crescator de
 //cazul cand sirul este neordonat. sirul va fi definit asa, numerele sunt de exemplu.
@@ -430,6 +453,8 @@ public class Operatii {
         }
         System.out.println("Suma primelor " + n + " numere este: " + s);
     }
+
+
 }
 
 

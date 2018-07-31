@@ -314,10 +314,9 @@ end cat timp
 
 //4 Se da un numar a. Se se afiseze un numar b format doar din numerele impare ale numarului a, si un numar c format
 //din patratul numerelor pare ale numarului a.
-       // int a = 625378782178;
-
-        
-
+       // int a = 6253787;
+//de verificat cu Cosmin cerinta.
+      // op.twoFromOneNumber(6253787);
 
 //5. Se da un sir de numere ordonate crescator. Se va determina daca un numar n exista in sir, si daca exista se va afisa
  //pozitia pe care s-a gasit, altfel se va afisa -1. Cu ce difera algoritmul cand sirul este ordonat crescator de
@@ -419,9 +418,9 @@ end cat timp
  - Sa se adauge un numar in lista (la finalil listei)
  - Sa se modifice penultimul numar din lista
 */
-        ArrayList myList = new ArrayList();
-        System.out.println ("NUMBERS:");
-        int input = scan.nextInt();
+//        ArrayList myList = new ArrayList();
+//        System.out.println ("NUMBERS:");
+//        int input = scan.nextInt();
 
     }
 }
