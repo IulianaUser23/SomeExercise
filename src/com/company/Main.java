@@ -271,30 +271,52 @@ cat timp a diferit de zero
    a = a/10
 end cat timp
 */
-//        int nr;
-//        int suma=0;
-//        int produs = 1;
-//        System.out.println("introduceti numarul");
-//        nr = scan.nextInt();
-//
-//        int count = 0;
-//
-//        while (nr % 10 != 0) {
-//            suma = suma + (nr % 10);
-//            produs = produs * (nr % 10);
-//            nr =  nr / 10;
-//            ++count;
-//        }
-//       //a
-//        System.out.println("suma numerelor este: " + suma);
-//        System.out.println("produsul numerelor este: " + produs);
-//        //b
-//        System.out.println("Numarul este format din: " + count + " cifre");
+        int nr;
+        int suma = 0;
+        int produs = 1;
+        System.out.println("introduceti numarul");
+        nr = scan.nextInt();
+        int min = 9;
+        int max = 0;
+        int cifra;
+        int count = 0;
 
+        /*% 10 */
+        while (nr != 0) {
+            cifra = nr % 10;
+            suma = suma + (nr % 10);
+            produs = produs * (nr % 10);
+            ++count;
+            if (cifra > max) {
+                max = cifra;
+            }
+            if (cifra < min) {
+                min = cifra;
+            }
+            nr = nr / 10;
+        }
+
+        //d
+        while (nr >9) {
+                suma = 0;
+                while (nr!=0) {
+                    suma = suma + (nr % 10);
+                    nr = nr / 10;
+                }  nr = suma;
+        }
+        System.out.println ("Cifra de control este: " + suma);
+        //a
+        System.out.println("Suma numerelor este: " + suma);
+        System.out.println("produsul numerelor este: " + produs);
+        //b
+        System.out.println("Numarul este format din: " + count + " cifre");
+        //c
+        System.out.println("Minimul este: " + min + "Maximul este: " + max);
+    }
 
 //2. Se da un numar a. Se se afiseze numarul invers de ex int a = 476, se va obtine  int invers =674
 
-        // op.nrOnReverse(4789);
+    // op.nrOnReverse(4789);
 
 
 //3. Se da un numar a. Sa se determine daca numarul este palindrom ori nu.
@@ -314,13 +336,13 @@ end cat timp
 
 //4 Se da un numar a. Se se afiseze un numar b format doar din numerele impare ale numarului a, si un numar c format
 //din patratul numerelor pare ale numarului a.
-       // int a = 6253787;
-//de verificat cu Cosmin cerinta.
-      // op.twoFromOneNumber(6253787);
+    // int a = 6253787;
+
+    // op.twoFromOneNumber(6253787);
 
 //5. Se da un sir de numere ordonate crescator. Se va determina daca un numar n exista in sir, si daca exista se va afisa
- //pozitia pe care s-a gasit, altfel se va afisa -1. Cu ce difera algoritmul cand sirul este ordonat crescator de
- //cazul cand sirul este neordonat. sirul va fi definit asa, numerele sunt de exemplu.
+    //pozitia pe care s-a gasit, altfel se va afisa -1. Cu ce difera algoritmul cand sirul este ordonat crescator de
+    //cazul cand sirul este neordonat. sirul va fi definit asa, numerele sunt de exemplu.
 //        int[] list = {1,3,4,6,7,8,10,12,14,23};
 //        System.out.println("index of 12 is "
 //                + Arrays.binarySearch(list, 12));
@@ -329,7 +351,7 @@ end cat timp
 
 
 //6. Se se calculeze suma primelor n numere naturale, unde n este declarat ca si int n = 20; sau o alta valoare
-        //   op.sumaNrNaturale(20);
+    //   op.sumaNrNaturale(20);
 
 
 //7. Se da un sir de numere naturale, ideal de peste doua cifre. Sa se determine cea mai mare valoare din sir
@@ -370,6 +392,17 @@ end cat timp
 
 //11. Se da un sir de numere. Sa se afiseze perechile de numere pentru care  primul numar este mai mare decat al doilea.
 //de ex pt 11 13 9 8 16 se va afisa   13 9 , 9 8
+
+//        int[] list = {11, 13, 9, 8, 16};
+//        List<Integer> newList = new ArrayList<>();
+//        int i;
+//        int min = list[0];
+//        for (i = 0; i < list.length; i++) {
+//            if (list[i] < min) {
+//                System.out.println(list[i-1] + " , " + list[i]);
+//            }
+//        }
+//    }
 
 
 //12. Se da un numar intreg x si un numar intreg n. Sa se calculeze urmatoarea suma:
@@ -412,6 +445,29 @@ end cat timp
 
 //15. Se da un sir. Sa se extraga toate numerele intre doua valori si sa se puna intr-un alt sir care apoi sa se afiseze.
 
+//        ArrayList myList = new ArrayList();
+//        ArrayList newList = new ArrayList();
+//        myList.add(0, 15);
+//        myList.add(1, 10);
+//        myList.add(2, 8);
+//        myList.add(3, 22);
+//        myList.add(4, 19);
+//        myList.add(5, 13);
+//        myList.add(6, 1);
+//        myList.add(7, 5);
+//        myList.add(8, 9);
+//
+//        System.out.println(myList);
+//
+//        System.out.println("Introduceti primul numar:");
+//        int first = scan.nextInt();
+//        System.out.println("Introduceti al doilea  numar:");
+//        int second = scan.nextInt();
+//        for (int i = first; i <= second; i++){
+//
+//        }
+//    }
+
 
 /*16. Sa se citeasca numere de la tastauta pana la introducerea valorii 0 (numerele sa fie salvate intr-o lista - ArrayList)
  - Sa se steaga al doilea numar din lista
@@ -422,7 +478,7 @@ end cat timp
 //        System.out.println ("NUMBERS:");
 //        int input = scan.nextInt();
 
-    }
+
 }
 
 
