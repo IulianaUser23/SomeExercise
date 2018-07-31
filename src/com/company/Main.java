@@ -316,6 +316,8 @@ end cat timp
 //din patratul numerelor pare ale numarului a.
        // int a = 625378782178;
 
+        
+
 
 //5. Se da un sir de numere ordonate crescator. Se va determina daca un numar n exista in sir, si daca exista se va afisa
  //pozitia pe care s-a gasit, altfel se va afisa -1. Cu ce difera algoritmul cand sirul este ordonat crescator de
